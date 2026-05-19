@@ -1,83 +1,438 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio Aditya</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#about" class="nav-btn">About Me</a>
+
+        <a href="#education" class="nav-btn">Last Education</a>
+
+        <a href="#skills" class="nav-btn">Skills</a>
+
+        <a href="#projects" class="nav-btn">Projects</a>
+
+        <a href="#certification" class="nav-btn">Certification</a>
+
+        <a href="#contact" class="nav-btn">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Header -->
     <header>
-        <div class="container">
-            <img src="profile.jpg" alt="Foto Profil" class="profile-pic">
-            <h1>Aditya Yuda Pamungkas</h1>
-            <p>5210411308</p>
+      <div class="container hero-container">
+        <img src="profile.jpeg" alt="Foto Profil" class="profile-pic" />
+
+        <div class="hero-text">
+          <h1>Aditya Yuda Pamungkas</h1>
+
+          <p class="hero-subtitle">
+            Front End Developer • Web Developer • Mobile Developer
+          </p>
+
+          <p class="hero-description">
+            Lulusan Sarjana Informatika dengan minat dalam pengembangan web,
+            mobile application, dan pengolahan data. Memiliki kemampuan dalam
+            front-end, back-end, serta desain antarmuka modern dan responsif.
+          </p>
         </div>
+      </div>
     </header>
+
+    <!-- About -->
     <section id="about">
-        <div class="section-content">
-            <h2>Tentang Saya</h2>
-            <div class="info-card">
-                <p><strong>Nama:</strong> Aditya Yuda Pamungkas</p>
-                <p><strong>Tanggal Lahir:</strong> 9 April 2003</p>
-                <p><strong>Alamat:</strong> Sukoharjo, Jawa Tengah</p>
-                <p><strong>Pendidikan Saat Ini:</strong> Mahasiswa Universitas Teknologi Yogyakarta Jurusan Sarjana Informatika</p>
-            </div>
+      <div class="section-content">
+        <div class="section-title">
+          <span class="section-icon">👨‍💻</span>
+          <h2>About Me</h2>
         </div>
+
+        <div class="info-card">
+          <p><strong>Nama:</strong> Aditya Yuda Pamungkas</p>
+
+          <p><strong>Tanggal Lahir:</strong> 9 April 2003</p>
+
+          <p><strong>Alamat:</strong> Sukoharjo, Jawa Tengah</p>
+
+          <br />
+
+          <p>
+            Lulusan Sarjana Informatika dari Universitas Teknologi Yogyakarta
+            dengan minat pada pengembangan aplikasi web dan mobile serta
+            pengelolaan data. Memiliki kemampuan dalam pengembangan aplikasi web
+            dan mobile pada sisi front-end maupun back-end, serta terbiasa
+            mengelola administrasi dan pengolahan data menggunakan Microsoft
+            Office dan Google Workspace.
+          </p>
+        </div>
+      </div>
     </section>
-    
+
+    <!-- Projects -->
     <section id="projects">
-        <div class="section-content">
-            <h2>Project</h2>
-            <div class="project">
-                <img src="project.jpg" alt="Proyek 1" class="project-img">
-                <div class="project-text">
-                    <h3>Project 1</h3>
-                    <p>Aplikasi Pendataan Data Kesehatan Balita Untuk 
-                    Dukung Pengembangan Kesehatan Anak Desa 
-                    Karangtengah Kecamatan Weru Kabupaten Sukoharjo</p>
-                </div>
-            </div>
+      <div class="section-content">
+        <div class="section-title">
+          <span class="section-icon">💼</span>
+          <h2>Projects</h2>
         </div>
+
+        <div class="projects-container">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="project.jpg"
+                alt="Aplikasi Posyandu"
+                class="project-img"
+              />
+            </div>
+
+            <div class="project-text">
+              <span class="project-tag">Mobile Application</span>
+
+              <h3>Aplikasi Posyandu Balita (Tugas Akhir)</h3>
+
+              <p>
+                Aplikasi pendataan data kesehatan balita untuk mendukung
+                pengembangan kesehatan anak Desa Karangtengah Kecamatan Weru
+                Kabupaten Sukoharjo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="ssprojectwebkoperasi.png"
+                alt="Website Koperasi"
+                class="project-img"
+              />
+            </div>
+
+            <div class="project-text">
+              <span class="project-tag">Website Development</span>
+
+              <h3>Website Koperasi Rumah Tahanan Negara Kelas 1 Semarang</h3>
+
+              <p>
+                Pembuatan website koperasi yang menyediakan informasi produk,
+                layanan, dan kontak koperasi dengan tampilan modern dan
+                responsif.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
+    <!-- Education -->
     <section id="education">
-        <div class="section-content">
-            <h2>Pendidikan</h2>
-            <div class="info-card">
-                <p>Mahasiswa Universitas Teknologi Yogyakarta Sarjana Informatika</p>
+      <div class="section-content">
+        <div class="section-title">
+          <span class="section-icon">🎓</span>
+          <h2>Last Education</h2>
+        </div>
+
+        <div class="education-card">
+          <div class="education-right">
+            <h3>Universitas Teknologi Yogyakarta</h3>
+
+            <h4>Sarjana Informatika</h4>
+
+            <p class="education-year">2021 - 2025</p>
+
+            <p class="education-description">
+              Menempuh pendidikan di bidang Informatika dengan fokus pada
+              pengembangan aplikasi web dan mobile, pengolahan data, serta
+              pengembangan sistem berbasis teknologi modern.
+            </p>
+
+            <div class="education-gpa">
+              <span>IPK</span>
+              <strong>3.53</strong>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    
+
+    <!-- Skills -->
     <section id="skills">
-        <div class="section-content">
-            <h2>Keahlian</h2>
-            <ul class="skills-list">
-                <li>Front End Developer</li>
-                <li>Back End Developer</li>
-                <li>Web Designer</li>
-                <li>Mobile Aplikasi Development</li>
-                <li>Web Developer</li>
-            </ul>
+      <div class="section-content">
+        <div class="section-title">
+          <span class="section-icon">⚡</span>
+          <h2>Skills</h2>
         </div>
+
+        <div class="skills-wrapper">
+          <!-- Kemampuan Teknis -->
+          <div class="skill-category">
+            <h3>Kemampuan Teknis</h3>
+
+            <div class="skill-items">
+              <span>Kotlin</span>
+              <span>Flutter</span>
+              <span>PHP Native</span>
+              <span>React Native</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>CodeIgniter</span>
+              <span>Laravel</span>
+              <span>Python</span>
+              <span>Java</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>MySQL</span>
+              <span>SQLite</span>
+              <span>Firebase Authentication</span>
+              <span>Firestore</span>
+              <span>REST API</span>
+              <span>Android Studio</span>
+              <span>Visual Studio Code</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Front-End Development</span>
+              <span>Back-End Development</span>
+              <span>Mobile App Development</span>
+              <span>Web Development</span>
+              <span>Responsive Web Design</span>
+              <span>API Integration</span>
+              <span>Data Processing</span>
+              <span>Troubleshooting & Debugging</span>
+            </div>
+          </div>
+
+          <!-- Administrasi -->
+          <div class="skill-category">
+            <h3>Administrasi & Pengolahan Data</h3>
+
+            <div class="skill-items">
+              <span>Microsoft Office</span>
+              <span>Google Workspace</span>
+              <span>Data Administration</span>
+              <span>Data Processing</span>
+            </div>
+          </div>
+
+          <!-- Interpersonal -->
+          <div class="skill-category">
+            <h3>Kemampuan Interpersonal</h3>
+
+            <div class="skill-items">
+              <span>Kemampuan komunikasi yang baik</span>
+              <span>Mampu bekerja individu maupun tim</span>
+              <span>Manajemen waktu yang baik</span>
+              <span>Cepat beradaptasi</span>
+              <span>Mudah mempelajari hal baru</span>
+              <span>Teliti dan disiplin</span>
+              <span>Bertanggung jawab dalam pekerjaan</span>
+              <span>Semangat belajar tinggi</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
+    <!-- Certification -->
+    <section id="certification">
+      <div class="section-content">
+        <div class="section-title">
+          <span class="section-icon">🏆</span>
+          <h2>Certification</h2>
+        </div>
+
+        <div class="certification-container">
+          <!-- CERT 1 -->
+          <div class="cert-card">
+            <div class="cert-image">
+              <img
+                src="machinelearning.jpeg"
+                alt="Machine Learning Certificate"
+              />
+            </div>
+            <div class="cert-text">
+              <h3>Machine Learning Professional Certification</h3>
+              <p>
+                Sertifikasi ini membuktikan kemampuan dalam membangun model
+                machine learning menggunakan RapidMiner, termasuk preprocessing
+                data, training model, dan evaluasi performa.
+              </p>
+              <span>RapidMiner</span>
+            </div>
+          </div>
+
+          <!-- CERT 2 -->
+          <div class="cert-card">
+            <div class="cert-image">
+              <img
+                src="dataengineering.jpeg"
+                alt="Data Engineering Certificate"
+              />
+            </div>
+            <div class="cert-text">
+              <h3>Data Engineering Professional Certification</h3>
+              <p>
+                Fokus pada pengolahan data, ETL pipeline, dan manajemen data
+                untuk kebutuhan analisis dan sistem skala besar.
+              </p>
+              <span>RapidMiner</span>
+            </div>
+          </div>
+
+          <!-- CERT 3 -->
+          <div class="cert-card">
+            <div class="cert-image">
+              <img
+                src="computervision.jpeg"
+                alt="Computer Vision Certificate"
+              />
+            </div>
+            <div class="cert-text">
+              <h3>Implementasi Computer Vision pada Kehidupan Sehari-hari</h3>
+              <p>
+                Mempelajari implementasi computer vision dalam kehidupan
+                sehari-hari seperti deteksi objek dan pengolahan gambar.
+              </p>
+              <span>Data Sorcerers</span>
+            </div>
+          </div>
+
+          <!-- CERT 4 -->
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="kotlin.jpeg" alt="Kotlin Certificate" />
+            </div>
+            <div class="cert-text">
+              <h3>Kuasai Kotlin dalam 1 Jam</h3>
+              <p>
+                Pengenalan cepat bahasa Kotlin mencakup syntax dasar, OOP, dan
+                implementasi sederhana dalam aplikasi Android.
+              </p>
+              <span>Dicoding</span>
+            </div>
+          </div>
+
+          <!-- CERT 5 -->
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="fundamentalexcel.jpeg" alt="Excel Certificate" />
+            </div>
+            <div class="cert-text">
+              <h3>Fundamental Excel</h3>
+              <p>
+                Menguasai dasar pengolahan data menggunakan Microsoft Excel
+                seperti formula, pivot table, dan analisis data.
+              </p>
+              <span>Coding Studio</span>
+            </div>
+          </div>
+
+          <!-- CERT 6 -->
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="toefl.jpeg" alt="TOEFL Certificate" />
+            </div>
+            <div class="cert-text">
+              <h3>TOEFL Score 450</h3>
+              <p>
+                Sertifikasi kemampuan bahasa Inggris yang mencakup reading,
+                listening, dan structure.
+              </p>
+              <span>UTY Education & Training Center</span>
+            </div>
+          </div>
+
+          <!-- AWARD CERTIFICATE (NEW) -->
+          <div class="cert-card highlight">
+            <div class="cert-image">
+              <img src="computervision.jpeg" alt="Web Koperasi Certificate" />
+            </div>
+            <div class="cert-text">
+              <h3>Penghargaan Pembuatan Web Koperasi</h3>
+              <p>
+                Penghargaan atas kontribusi dalam pengembangan website koperasi
+                Rumah Tahanan Negara Kelas 1 Semarang sebagai sistem informasi
+                digital untuk pengelolaan data dan layanan koperasi.
+              </p>
+              <span>Rutan Kelas 1 Semarang</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact">
-        <div class="section-content">
-            <h2>Kontak</h2>
-            <ul class="contact-list">
-                <li><img src="whatsapp.png" alt="WhatsApp" class="contact-icon"> 081213550517</li>
-                <li><img src="instagram.png" alt="Instagram" class="contact-icon"> @adtyyd_p</li>
-                <li><img src="linkedin.png" alt="LinkedIn" class="contact-icon"> Aditya Yuda Pamungkas</li>
-            </ul>
+      <div class="section-content">
+        <div class="section-title">
+          <span class="section-icon">📞</span>
+          <h2>Contact</h2>
         </div>
+
+        <ul class="contact-list">
+          <!-- WhatsApp -->
+          <li>
+            <a
+              href="https://wa.me/6281213550517"
+              target="_blank"
+              class="contact-link"
+            >
+              <img src="whatsapp.png" alt="WhatsApp" class="contact-icon" />
+              <span>081213550517</span>
+            </a>
+          </li>
+
+          <!-- Instagram -->
+          <li>
+            <a
+              href="https://www.instagram.com/adtyyd_p?igsh=MTI1N3pyMmg4Z2JjNw=="
+              target="_blank"
+              class="contact-link"
+            >
+              <img src="instagram.png" alt="Instagram" class="contact-icon" />
+              <span>@adtyyd_p</span>
+            </a>
+          </li>
+
+          <!-- LinkedIn -->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/aditya-yuda-pamungkas-6772a6320"
+              target="_blank"
+              class="contact-link"
+            >
+              <img src="linkedin.png" alt="LinkedIn" class="contact-icon" />
+              <span>Aditya Yuda Pamungkas</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
-    
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Aditya Yuda Pamungkas.</p>
-        </div>
+      <div class="container footer-container">
+        <p>&copy; 2026 Aditya Yuda Pamungkas.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
