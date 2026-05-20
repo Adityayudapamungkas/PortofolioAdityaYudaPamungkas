@@ -711,11 +711,15 @@ section {
 .contact-list {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 
-  gap: 20px;
+  gap: 22px;
 
   list-style: none;
+}
+
+.contact-list li {
+  width: 100%;
 }
 
 .contact-link {
@@ -723,7 +727,7 @@ section {
 
   align-items: center;
 
-  gap: 15px;
+  gap: 18px;
 
   text-decoration: none;
 
@@ -731,25 +735,65 @@ section {
 
   width: 100%;
 
-  padding: 20px;
+  padding: 22px;
 
-  border-radius: 18px;
+  border-radius: 22px;
 
   background: rgba(255, 255, 255, 0.08);
 
-  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
 }
 
 .contact-link:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+
+  background: rgba(0, 198, 255, 0.12);
+
+  border-color: rgba(0, 198, 255, 0.25);
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
 .contact-icon {
-  width: 32px;
+  width: 48px;
 
-  height: 32px;
+  height: 48px;
 
   object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.contact-info {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.contact-info h4 {
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-bottom: 4px;
+
+  color: white;
+}
+
+.contact-info span {
+  font-size: 14px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  word-break: break-word;
+}
+
+.contact-link:hover .contact-info span {
+  color: white;
 }
 
 /* =========================
